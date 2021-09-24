@@ -1,5 +1,7 @@
-<p id="notice"></p>
+<p id="notice"><%= notice %></p>
 <p><strong>Title:</strong><%= @book.title %></p>
 <P><strong>Body:</strong><%= @book.body %></P>
 
-<%= link_to "Edit", edit_book_path(@book.id) %>
+<p><%= link_to "Edit", edit_book_path(@book.id) %> |
+<%= link_to "Back", books_path %></p>
+
